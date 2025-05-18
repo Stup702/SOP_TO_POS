@@ -45,6 +45,8 @@ int dec_to_bin(int n)
 
     int len = strlen(variable);
     int i = len - 1;
+    memset(bin,'0',10);
+
 
     while (n != 0)
     {
@@ -60,7 +62,7 @@ int dec_to_bin(int n)
         n /= 2;
     }
 
-    bin[len + 1] = '\0';
+    bin[len ] = '\0';
 }
 
 // transforms the read and tokenized string snippet ito its binary format
