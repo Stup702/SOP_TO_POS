@@ -8,7 +8,6 @@
 A test case:   AB~C + ABC + ~A~B~C
 Should return (A+B+~C)(A+~B+C)(A+~B+~C)(~A+B+C)(~A+B+~C)
 */
-
 int var_freq[27] = {0};
 
 char variable[6];
